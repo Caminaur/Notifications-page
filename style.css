@@ -101,6 +101,7 @@ body{
   align-items: center;
   gap: 1rem;
   margin: 10px 0;
+  position: relative;
 }
 
 .notification img.user-profile{
@@ -120,7 +121,8 @@ body{
 }
 
 .notification .notification-message{
-  color: var(--dark-grayish-blue)
+  color: var(--dark-grayish-blue);
+  width:100%;
 }
 
 .notification .post-reference{
@@ -154,4 +156,33 @@ body{
 strong.user:hover, .post-reference:hover, .group-reference:hover{
   cursor: pointer;
   color: var(--primary-blue)!important;
+}
+
+.notification.unread {
+  background-color: var(--light-grayish-blue-2);
+  border-radius: 7px;
+}
+.notification.unread:hover{
+  cursor: pointer;
+}
+
+.notification.unread .info{
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.notification.unread .info::after{
+  content: '';
+  display: block;
+  height: 10px;
+  min-height: 10px;
+  width: 10px;
+  min-width: 10px;
+  background-color: var(--primary-red);
+  border-radius: 50%;
+  /* position: absolute;
+  right: 5px;
+  top: 5px; */
 }
