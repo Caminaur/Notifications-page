@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Notifications page</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { margin: 20px 0; font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="top-left">
+        <p class="title">Notifications</p><div class="counter"> 3</div>
+      </div>
+      <button type="button" class="btn">Mark all as read</button>
+    </div>
+
+    <div class="notification">
+      <img src="assets/images/avatar-mark-webber.webp" alt="" class="user-profile">
+      <div class="notification-message">
+        <p><strong class="user">Mark Webber</strong>
+          reacted to your recent post <a href="#" class="post-reference">My first tournament today!</a></p>
+        <p class="time">1m ago</p>
+      </div>
+    </div>
+
+    <div class="notification">
+      <img src="assets/images/avatar-angela-gray.webp" alt="" class="user-profile">
+      <div class="notification-message">
+        <p>
+          <strong class="user">Angela Gray</strong> followed you
+        </p>
+        <p class="time">5m ago</p>
+      </div>
+    </div>
+
+    <div class="notification">
+      <img src="assets/images/avatar-jacob-thompson.webp" alt="" class="user-profile">
+      <div class="notification-message">
+        <p>
+          <strong class="user">Jacob Thompson</strong> has joined your group <a href="#" class="group-reference"> Chess Club </a>
+        </p>
+        <p class="time">1 day ago</p>
+      </div>
+    </div>
+
+    <div class="notification">
+      <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="" class="user-profile">
+      <div class="notification-message">
+        <p>
+          <strong class="user">Rizky Hasanuddin</strong>  sent you a private message
+        </p>
+        <p class="time">5 days ago</p>
+        <textarea class="private-message-reference" name="" id="" rows="5">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</textarea>
+        </div>
+    </div>
+    <div class="notification">
+      <div class="notification-content">
+        <img src="assets/images/avatar-kimberly-smith.webp" alt="" class="user-profile">
+        <div class="notification-message">
+          <p>
+            <strong class="user">Kimberly Smith</strong> commented on your picture
+          </p>
+          <p class="time">1 week ago</p>
+        </div>
+      </div>
+      <div class="notification-image">
+        <img src="assets/images/image-chess.webp" alt="">
+      </div>
+
+
+    </div>
+    <div class="notification">
+      <img src="assets/images/avatar-nathan-peterson.webp" alt="" class="user-profile">
+      <div class="notification-message">
+        <p>
+          <strong class="user">Nathan Peterson</strong>
+          reacted to your recent post <a href="#" class="post-reference"> 5 end-game strategies to increase your win rate</a>
+        </p>
+        <p class="time">2 weeks ago</p>
+      </div>
+    </div>
+    <div class="notification">
+      <img src="assets/images/avatar-anna-kim.webp" alt="" class="user-profile">
+      <div class="notification-message">
+        <p>
+          <strong class="user">Anna Kim</strong> left the group <a href="#" class="group-reference"> Chess Club </a>
+        </p>
+        <p class="time">2 weeks ago</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Julian Caminaur</a>.
+  </div>
+</body>
+</html>
